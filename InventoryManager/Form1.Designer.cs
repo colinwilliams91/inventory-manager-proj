@@ -54,19 +54,20 @@ namespace InventoryManager
             this.InventoryManagementSystemLabel.AutoSize = true;
             this.InventoryManagementSystemLabel.Font = new System.Drawing.Font("Space Mono", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InventoryManagementSystemLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.InventoryManagementSystemLabel.Location = new System.Drawing.Point(107, 9);
+            this.InventoryManagementSystemLabel.Location = new System.Drawing.Point(106, 9);
             this.InventoryManagementSystemLabel.Name = "InventoryManagementSystemLabel";
             this.InventoryManagementSystemLabel.Size = new System.Drawing.Size(560, 48);
             this.InventoryManagementSystemLabel.TabIndex = 0;
             this.InventoryManagementSystemLabel.Text = "Inventory Management System";
+            this.InventoryManagementSystemLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // inventoryGridView1
             // 
             this.inventoryGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.inventoryGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inventoryGridView1.Location = new System.Drawing.Point(12, 175);
+            this.inventoryGridView1.Location = new System.Drawing.Point(12, 197);
             this.inventoryGridView1.Name = "inventoryGridView1";
-            this.inventoryGridView1.Size = new System.Drawing.Size(776, 263);
+            this.inventoryGridView1.Size = new System.Drawing.Size(776, 241);
             this.inventoryGridView1.TabIndex = 1;
             this.inventoryGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inventoryGridView1_CellDoubleClick);
             // 
@@ -74,7 +75,7 @@ namespace InventoryManager
             // 
             this.addButton.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.addButton.Location = new System.Drawing.Point(12, 146);
+            this.addButton.Location = new System.Drawing.Point(12, 168);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(253, 23);
             this.addButton.TabIndex = 2;
@@ -86,7 +87,7 @@ namespace InventoryManager
             // 
             this.deleteButton.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.deleteButton.Location = new System.Drawing.Point(530, 146);
+            this.deleteButton.Location = new System.Drawing.Point(530, 168);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(258, 23);
             this.deleteButton.TabIndex = 3;
@@ -98,7 +99,7 @@ namespace InventoryManager
             // 
             this.saveButton.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.saveButton.Location = new System.Drawing.Point(271, 146);
+            this.saveButton.Location = new System.Drawing.Point(271, 168);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(253, 23);
             this.saveButton.TabIndex = 4;
@@ -108,35 +109,35 @@ namespace InventoryManager
             // 
             // costTextBox
             // 
-            this.costTextBox.Location = new System.Drawing.Point(12, 120);
+            this.costTextBox.Location = new System.Drawing.Point(12, 142);
             this.costTextBox.Name = "costTextBox";
             this.costTextBox.Size = new System.Drawing.Size(253, 20);
             this.costTextBox.TabIndex = 5;
             // 
             // descTextBox
             // 
-            this.descTextBox.Location = new System.Drawing.Point(271, 120);
+            this.descTextBox.Location = new System.Drawing.Point(271, 142);
             this.descTextBox.Name = "descTextBox";
             this.descTextBox.Size = new System.Drawing.Size(253, 20);
             this.descTextBox.TabIndex = 6;
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(271, 74);
+            this.nameTextBox.Location = new System.Drawing.Point(271, 96);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(253, 20);
             this.nameTextBox.TabIndex = 7;
             // 
             // skuTextBox
             // 
-            this.skuTextBox.Location = new System.Drawing.Point(12, 74);
+            this.skuTextBox.Location = new System.Drawing.Point(12, 96);
             this.skuTextBox.Name = "skuTextBox";
             this.skuTextBox.Size = new System.Drawing.Size(253, 20);
             this.skuTextBox.TabIndex = 8;
             // 
             // amtTextBox
             // 
-            this.amtTextBox.Location = new System.Drawing.Point(530, 120);
+            this.amtTextBox.Location = new System.Drawing.Point(530, 142);
             this.amtTextBox.Name = "amtTextBox";
             this.amtTextBox.Size = new System.Drawing.Size(258, 20);
             this.amtTextBox.TabIndex = 9;
@@ -144,7 +145,7 @@ namespace InventoryManager
             // catComboBox
             // 
             this.catComboBox.FormattingEnabled = true;
-            this.catComboBox.Location = new System.Drawing.Point(530, 74);
+            this.catComboBox.Location = new System.Drawing.Point(530, 96);
             this.catComboBox.Name = "catComboBox";
             this.catComboBox.Size = new System.Drawing.Size(258, 21);
             this.catComboBox.TabIndex = 10;
@@ -153,7 +154,7 @@ namespace InventoryManager
             // 
             this.label1.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(13, 55);
+            this.label1.Location = new System.Drawing.Point(13, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(252, 16);
             this.label1.TabIndex = 11;
@@ -163,7 +164,7 @@ namespace InventoryManager
             // 
             this.label2.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(272, 55);
+            this.label2.Location = new System.Drawing.Point(272, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(252, 16);
             this.label2.TabIndex = 12;
@@ -173,7 +174,7 @@ namespace InventoryManager
             // 
             this.label3.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Info;
-            this.label3.Location = new System.Drawing.Point(530, 55);
+            this.label3.Location = new System.Drawing.Point(530, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(258, 16);
             this.label3.TabIndex = 13;
@@ -183,7 +184,7 @@ namespace InventoryManager
             // 
             this.label4.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Info;
-            this.label4.Location = new System.Drawing.Point(12, 101);
+            this.label4.Location = new System.Drawing.Point(12, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(252, 16);
             this.label4.TabIndex = 14;
@@ -193,7 +194,7 @@ namespace InventoryManager
             // 
             this.label5.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Info;
-            this.label5.Location = new System.Drawing.Point(272, 101);
+            this.label5.Location = new System.Drawing.Point(272, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(252, 16);
             this.label5.TabIndex = 15;
@@ -203,7 +204,7 @@ namespace InventoryManager
             // 
             this.label6.Font = new System.Drawing.Font("Space Mono", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Info;
-            this.label6.Location = new System.Drawing.Point(530, 101);
+            this.label6.Location = new System.Drawing.Point(530, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(258, 16);
             this.label6.TabIndex = 16;

@@ -32,12 +32,24 @@ namespace InventoryManager
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            skuTextBox.Text = "";
+            nameTextBox.Text = "";
+            costTextBox.Text = "";
+            descTextBox.Text = "";
+            amtTextBox.Text = "";
+            catComboBox.SelectedIndex = -1;
 
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-
+            // save all the values from our fields to variables
+            string sku = skuTextBox.Text;
+            string name = nameTextBox.Text;
+            string cost = costTextBox.Text;
+            string desc = descTextBox.Text;
+            string amt = amtTextBox.Text;
+            string cat = (string)catComboBox.SelectedItem;
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
