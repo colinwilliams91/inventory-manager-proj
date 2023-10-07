@@ -67,13 +67,25 @@ namespace InventoryManager
             catch (Exception err)
             {
 
-                Console.WriteLine("Error: " + err);
+                Console.WriteLine("There has been a Deletion error: " + err);
             }
         }
 
         private void inventoryGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                skuTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
+                nameTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+                costTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[3].ToString();
+                descTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[4].ToString();
+                amtTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[5].ToString();
+            }
+            catch (Exception err)
+            {
 
+                Console.WriteLine("There has been a Cell Double Click error: ", err);
+            }
         }
     }
 }
