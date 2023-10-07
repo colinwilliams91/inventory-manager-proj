@@ -50,6 +50,10 @@ namespace InventoryManager
             string desc = descTextBox.Text;
             string amt = amtTextBox.Text;
             string cat = (string)catComboBox.SelectedItem;
+
+            // add these values to the database
+            inventory.Rows.Add(sku, name, cat, cost, desc, amt);
+            addButton_Click(sender, e);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)

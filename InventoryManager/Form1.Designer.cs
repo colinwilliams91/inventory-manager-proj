@@ -79,7 +79,7 @@ namespace InventoryManager
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(253, 23);
             this.addButton.TabIndex = 2;
-            this.addButton.Text = "ADD";
+            this.addButton.Text = "NEW";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
