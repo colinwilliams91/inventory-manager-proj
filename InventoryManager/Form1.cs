@@ -53,12 +53,22 @@ namespace InventoryManager
 
             // add these values to the database
             inventory.Rows.Add(sku, name, cat, cost, desc, amt);
+            // clear fields after save
             addButton_Click(sender, e);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // user has a row selected so we can get the RowIndex of it, access the DataTable by that index and Delete
+                inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].Delete();
+            }
+            catch (Exception err)
+            {
 
+                Console.WriteLine("Error: " + err);
+            }
         }
 
         private void inventoryGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
