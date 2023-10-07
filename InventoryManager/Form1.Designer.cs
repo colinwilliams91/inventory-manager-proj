@@ -145,6 +145,12 @@ namespace InventoryManager
             // catComboBox
             // 
             this.catComboBox.FormattingEnabled = true;
+            this.catComboBox.Items.AddRange(new object[] {
+            "RAM",
+            "CPU",
+            "GPU",
+            "MOBO",
+            "PSU"});
             this.catComboBox.Location = new System.Drawing.Point(530, 96);
             this.catComboBox.Name = "catComboBox";
             this.catComboBox.Size = new System.Drawing.Size(258, 21);

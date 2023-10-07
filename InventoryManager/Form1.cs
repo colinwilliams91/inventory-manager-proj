@@ -80,6 +80,10 @@ namespace InventoryManager
                 costTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[3].ToString();
                 descTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[4].ToString();
                 amtTextBox.Text = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[5].ToString();
+
+                string itemToFind = inventory.Rows[inventoryGridView1.CurrentCell.RowIndex].ItemArray[2].ToString();
+                // .Items iterates over collection, .IndexOf filters for item
+                catComboBox.SelectedIndex = catComboBox.Items.IndexOf(itemToFind);
             }
             catch (Exception err)
             {
